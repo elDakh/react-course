@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { Header } from './components/Header.js';
+import { CourseRate } from './components/CourseRate.js';
+import { FeedbackForm } from './components/FeedbackForm.js';
+import { Footer } from './components/Footer.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React sdc
-        </a>
-      </header>
+      <Header name="Liubomyr Dakh"/>
+      <CourseRate max="8"/>
+      <FeedbackForm/>
+      <Footer name="Liubomyr Dakh"/>
     </div>
   );
 }
